@@ -35,4 +35,5 @@
 /Users/kodeslacker/Desktop/GameGuide/platforms/android/ant-build/classes/com/smartmobilesoftware/util/Purchase.class \
 /Users/kodeslacker/Desktop/GameGuide/platforms/android/ant-build/classes/com/smartmobilesoftware/util/Security.class \
 /Users/kodeslacker/Desktop/GameGuide/platforms/android/ant-build/classes/com/smartmobilesoftware/util/SkuDetails.class \
+/Users/kodeslacker/Desktop/GameGuide/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
 /Users/kodeslacker/Desktop/GameGuide/platforms/android/ant-build/dexedLibs/classes-c7de1d53b44f4ebaf605eac2ce039df4.jar \

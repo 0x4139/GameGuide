@@ -1,81 +1,116 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>In App Billing</title>
-    <script type="text/javascript" charset="utf-8" src="inappbilling.js"></script>
-    <script type="text/javascript" charset="utf-8">
-        function successHandler (result) {
-            var strResult = "";
-            if(typeof result === 'object') {
-                strResult = JSON.stringify(result);
-            } else {
-                strResult = result;
-            }
-            alert("SUCCESS: \r\n"+strResult );
-        }
-
-        function errorHandler (error) {
-            alert("ERROR: \r\n"+error );
-        }
-
-        // Click on init button
-        function init(){
-            // Initialize the billing plugin
-            inappbilling.init(successHandler, errorHandler, {showLog:true});
-        }
-
-        // Click on purchase button
-        function buy(){
-            // make the purchase
-            inappbilling.buy(successHandler, errorHandler,"justtest");
-
-        }
-
-        // Click on ownedProducts button
-        function ownedProducts(){
-            // Initialize the billing plugin
-            inappbilling.getPurchases(successHandler, errorHandler);
-
-        }
-
-        // Click on Consume purchase button
-        function consumePurchase(){
-
-            inappbilling.consumePurchase(successHandler, errorHandler, "gas");
-        }
-
-        // Click on subscribe button
-        function subscribe(){
-            // make the purchase
-            inappbilling.subscribe(successHandler, errorHandler,"infinite_gas");
-
-        }
-
-        // Click on Query Details button
-        function getDetails(){
-            // Query the store for the product details
-            inappbilling.getProductDetails(successHandler, errorHandler, ["gas","infinite_gas"]);
-
-        }
-
-        // Click on Get Available Products button
-        function getAvailable(){
-            // Get the products available for purchase.
-            inappbilling.getAvailableProducts(successHandler, errorHandler);
-
-        }
-
-    </script>
-
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Top Clash of Clans Secrets</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
 </head>
 <body>
-<h1>Hello World</h1>
-<button onclick="init();">Initalize the billing plugin</button>
-<button onclick="buy();">Purchase</button>
-<button onclick="ownedProducts();">Owned products</button>
-<button onclick="consumePurchase();">Consume purchase</button>
-<button onclick="subscribe();">Subscribe</button>
-<button onclick="getDetails();">Query Details</button>
-<button onclick="getAvailable();">Get Available Products</button>
+<!-- Status bar overlay for fullscreen mode-->
+<div class="statusbar-overlay"></div>
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<!-- Left panel with reveal effect-->
+<!-- Views-->
+<div class="views">
+    <!-- Your main view, should have "view-main" class-->
+    <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <!-- We have home navbar without left link-->
+                <div class="center sliding">Top Clash of Clans Secrets</div>
+            </div>
+        </div>
+        <div class="toolbar">
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+            <!-- Page, data-page contains page name-->
+            <div data-page="index" class="page">
+                <!-- Scrollable page content-->
+                <div class="page-content">
+                    <div class="bg"></div>
+                    <div class="content-block-title">Choose Guide</div>
+                    <div class="list-block">
+                        <ul>
+
+
+                            <li><a href="m1.html" class="item-link">
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">Basic Overview</div>
+                                        <div class="item-after free">FREE</div>
+                                    </div>
+                                </div>
+                            </a></li>
+
+
+                            <li><a onclick="purchaseItem()" class="item-link">
+
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">Layouts and Base setups</div>
+                                        <div class="item-after premium"> $ 1.99</div>
+                                    </div>
+                                </div>
+                            </a></li>
+
+
+                            <li><a href="m3.html" class="item-link">
+
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">Attacking Secrets</div>
+                                        <div class="item-after premium"> $ 1.99</div>
+                                    </div>
+                                </div>
+                            </a></li>
+
+                            <li><a href="m4.html" class="item-link">
+
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">Clash of Clans Hacks</div>
+                                        <div class="item-after premium"> $ 1.99</div>
+                                    </div>
+                                </div>
+                            </a></li>
+
+
+                            <li><a onclick="purchaseAll()" class="item-link">
+
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">Unlock the Complete Guide - Best Deal</div>
+                                        <div class="item-after premium"> $ 3.99</div>
+                                    </div>
+                                </div>
+                            </a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8" src="inappbilling.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/my-app.js"></script>
+
 </body>
 </html>

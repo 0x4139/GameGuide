@@ -1,0 +1,13 @@
+.bg{
+ background: url("../img/bg.jpg");
+ background-size: contain;
+ background-size: cover;
+ width: 100%;
+ height: 40%;
+}
+.free{
+    color: green !important;
+}
+.premium{
+    color: orange !important;
+}
